@@ -79,7 +79,10 @@ Browser (HTTPS) -> CloudFront -> Application Load Balancer -> EC2
 - [ ] CloudWatch alarms and logs
 - [ ] Deployment checklist
 
-
+## Known Limitations
+- No custom domain, so the app uses the default CloudFront domain.
+- CloudFront -> ALB traffic uses HTTP because ACM certificates require a custom domain.
+- 
 
 ## Setup Notes
 
